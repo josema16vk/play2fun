@@ -4,6 +4,19 @@ require_once("..\load_session.php");
 $conexion = mysqli_connect(DBDOMAIN, DBUSER, DBPASSWORD, DBNAME) or die("Error al conectar " . mysqli_error());
 ?>
 
+<?php
+$serverName = "serverName\http://sql11.freesqldatabase.com/"; //serverName\instanceName
+$connectionInfo = array( "Database"=>"sql11415927", "UID"=>"sql11415927", "PWD"=>"tPjyXDsEqM");
+$conn = sqlsrv_connect( $serverName, $connectionInfo);
+
+if( $conn ) {
+     echo "Connection established.<br />";
+}else{
+     echo "Connection could not be established.<br />";
+     die( print_r( sqlsrv_errors(), true));
+}
+?>
+
 <html lang="es">
 
 <head>
