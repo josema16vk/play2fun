@@ -22,7 +22,7 @@ require_once('load_session.php');
     <div id="body">
         <div class="jumbotron">
             <h1 class="display-3"><strong>PLay2Fun</strong></h1>
-            <h4>Bienvenido Usuario, PENDIENTE</h4>
+            <h4 id="tit4">Bienvenido Usuario, PENDIENTE</h4>
            
             <hr class="my-4">
             <p class="lead">
